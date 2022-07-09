@@ -22,7 +22,5 @@ module.exports.run = async(client, message) => {
 exports.config = {
     name: "ekip4",
     usage: `ekip4`,
-    guildOnly: true,
-    aliases: ["ekip4"],
-    cooldown: 3000
+    aliases: ["ekip4"]
 };
