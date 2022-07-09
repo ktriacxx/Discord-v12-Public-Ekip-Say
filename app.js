@@ -18,7 +18,7 @@ fs.readdir('./komutlar/', (err, files) => {
 })
 client.on("ready", async () => {
     client.user.setPresence({ activity: { type: "LISTENING", name: serverset.status }, status: 'dnd' })
-    let jvoice = client.channels.cache.get("988144466365915156");
+    let jvoice = client.channels.cache.get(serverset.ses);
     if (jvoice) jvoice.join().catch(err => console.error("Ses kanalına bağlanılamadı!"));
   });
 client.login(serverset.token)
